@@ -1,7 +1,7 @@
 # Home Studio Configuration — Single Source of Truth
 
 **Owner:** Salvatore Larosa  
-**Version:** 2026-07-20  
+**Version:** 2026-08-03  
 **Status:** Production baseline  
 **Purpose:** fotografia tecnica dello stato attuale del sistema Home Office / Home Studio.  
 **Rule:** i valori indicati come `Production` descrivono ciò che è attualmente configurato. Alternative, ipotesi e prove future sono riportate separatamente e non sostituiscono la baseline.
@@ -14,6 +14,9 @@
 - Deve essere attiva una sola catena voce principale alla volta.
 - Blue Yeti è destinato ai workflow rapidi; RØDE PodMic + Vocaster Two ai workflow importanti.
 - I test di sync vanno verificati con speaker integrati del Mac o cuffie cablate, non tramite AirPlay/HomePod.
+- La Logitech StreamCam è stata dismessa: la webcam secondaria Production è ora Elgato Facecam 4K.
+- La Facecam 4K può usare filtri ottici da 49 mm; i filtri vanno trattati come parte della configurazione video, non come accessori generici.
+- Per workshop/seminari fuori studio è disponibile il kit DJI Wireless Mic 3.
 
 ## 2. Ambiente
 
@@ -22,7 +25,8 @@
 | Computer principale | MacBook Pro 2024, M3 Pro, 36 GB RAM | Production |
 | OBS Studio | 32.1.2 | Production |
 | Sistema video principale | Sony ZV-E10 MK2 + Elgato Game Capture 4K X | Production |
-| Webcam secondaria | Logitech StreamCam | Production |
+| Webcam secondaria | Elgato Facecam 4K + cavo Elgato USB-C 5 Gbps | Production |
+| Webcam precedente | Logitech StreamCam | Retired / dismessa |
 | Microfono principale | RØDE PodMic tramite Focusrite Vocaster Two | Production |
 | Microfono alternativo | Blue Yeti USB | Production |
 | Routing audio virtuale | BlackHole 2ch | Installed / On demand |
@@ -196,10 +200,10 @@ The audio sources and their filters are global. They must not be duplicated inde
 
 ## 3.13 Sync Offset baseline
 
-| Audio chain | Sony + Game Capture 4K X | Logitech StreamCam |
+| Audio chain | Sony + Game Capture 4K X | Elgato Facecam 4K |
 |---|---:|---:|
-| RØDE PodMic → Vocaster Two → Mac/OBS | +80 ms | +80 ms |
-| Blue Yeti → Mac/OBS | 0 ms | 0 ms |
+| RØDE PodMic → Vocaster Two → Mac/OBS | +80 ms | Da validare sulla Facecam 4K |
+| Blue Yeti → Mac/OBS | 0 ms | Da validare sulla Facecam 4K |
 
 In Advanced Audio Properties:
 
@@ -618,9 +622,43 @@ Simultaneous SD recording is intentionally enabled. The Sony therefore remains t
 
 The analog audio input of the 4K X has not yet been validated. It must remain classified as `Experimental / Future test`, not as part of the current production pipeline.
 
-# 10. Logitech StreamCam / Logi Tune
+# 10. Elgato Facecam 4K
+
+## 10.1 Device and connection
 
 | Parameter name | Current value |
+|---|---|
+| Device | Elgato Facecam 4K |
+| Role | Webcam secondaria / camera alternativa ad alta risoluzione |
+| Status | Production |
+| Replaces | Logitech StreamCam, dismessa |
+| Connection | Direct to MacBook Pro M3 Pro |
+| Cable | Elgato USB-C cable, 5 Gbps bandwidth |
+| Optical filter thread | 49 mm |
+| Notes | La Facecam 4K non passa dal CalDigit; resta una sorgente video diretta al Mac, come già avveniva per la precedente StreamCam. |
+
+## 10.2 Optical filter kit — Facecam 4K
+
+| Filter / accessory | Size | Purpose / note | Status |
+|---|---:|---|---|
+| K&F Concept Black Diffusion 1/8 | 49 mm | Diffusione leggera per ammorbidire l'immagine in alcune condizioni di ripresa. | Available |
+| HOYA UXII UV with Hoya Anti-Reflection Multi Coating | 49 mm | Filtro UV/protezione con trattamento antiriflesso. | Available |
+| K&F Concept CPL Nano-Klear polarizer, 18-layer nano coating | 49 mm | Filtro polarizzatore per gestire riflessi e resa in situazioni specifiche. | Available |
+| Lens cap | 49 mm | Protezione dell'obiettivo quando la Facecam 4K non viene usata per lunghi periodi. | Available |
+
+## 10.3 Retired webcam — Logitech StreamCam
+
+| Parameter name | Historical value |
+|---|---|
+| Device | Logitech StreamCam |
+| Status | Retired / dismessa |
+| Previous role | Webcam secondaria / backup / fast workflow |
+| Previous connection | Direct to MacBook Pro |
+| Previous software | Logi Tune |
+
+The following Logi Tune values are historical only and must not be treated as current Production settings:
+
+| Parameter name | Historical value |
 |---|---|
 | HDR | Off |
 | Anti-flicker | PAL 50Hz |
@@ -634,8 +672,6 @@ The analog audio input of the 4K X has not yet been validated. It must remain cl
 | Contrast | 120 |
 | Saturation | 120 |
 | Sharpness | 112 |
-
-All values above are the current Production configuration shown in Logi Tune.
 
 # 11. Lighting
 
@@ -670,7 +706,7 @@ Video:
 
 Typically paired with:
 
-`Logitech StreamCam → Mac/OBS`
+`Elgato Facecam 4K → Elgato USB-C 5 Gbps → MacBook Pro M3 Pro → OBS`
 
 ## 12.3 Active microphone rule
 
@@ -691,11 +727,15 @@ When the 4K X source opens black or appears reset:
 
 Use `Add Existing` when reusing the same capture device in another scene. Do not create multiple independent capture sources pointing to the same hardware.
 
-## 13.2 StreamCam wake-up exposure issue
+## 13.2 Facecam 4K validation
 
-Logi Tune may initially show the StreamCam image as too dark until the Exposure control is touched. The saved production values remain those listed in section 10.
+The Elgato Facecam 4K is the current Production webcam secondary source. Detailed Elgato Camera Hub parameters and A/V sync offsets are not yet documented in this baseline and should be validated after the new webcam setup is finalized.
 
-## 13.3 Sync playback validation
+## 13.3 Historical StreamCam wake-up exposure issue
+
+This issue is historical only. Logi Tune could initially show the retired StreamCam image as too dark until the Exposure control was touched.
+
+## 13.4 Sync playback validation
 
 Do not use AirPlay, HomePod or Wi-Fi speakers to judge recorded A/V sync. Use local Mac speakers or wired headphones.
 
@@ -709,8 +749,42 @@ Do not use AirPlay, HomePod or Wi-Fi speakers to judge recorded A/V sync. Use lo
 | SlickEQ reactivation | Not adopted |
 | Wider activation | Not adopted |
 | 4K delivery from OBS | Not required in current workflow |
+| Elgato Facecam 4K detailed Camera Hub settings | To be documented / Production device but settings not yet baselined |
+| Elgato Facecam 4K sync offset matrix | To be validated |
+| Logitech StreamCam | Retired / historical only |
 
-# 15. Source hierarchy
+# 15. Mobile / off-studio audio kit
+
+## 15.1 DJI Wireless Mic 3
+
+| Component | Quantity | Role / note | Status |
+|---|---:|---|---|
+| DJI Wireless Mic 3 receiver RX | 1 | Receiver usable with iPhone USB-C and Sony ZV-E10 MK2. | Available |
+| DJI Wireless Mic 3 transmitters TX | 2 | Wearable transmitters with magnetic clips, useful for presenter/interview/workshop capture. | Available |
+| Deadcat windshields | 4 | Wind protection for mobile/off-studio use. | Available |
+
+### Intended use
+
+The DJI Wireless Mic 3 kit is intended for reliable audio capture outside the home studio, including workshops, seminars, university rooms, meeting rooms and similar environments. It complements the fixed studio chains based on Blue Yeti or RØDE PodMic + Vocaster Two.
+
+# 16. Elgato Prompter navigation controller
+
+## 16.1 Norwii N95 Bluetooth clicker
+
+| Parameter name | Current value |
+|---|---|
+| Device | Norwii N95 Bluetooth clicker |
+| Companion app | Norwii Presenter |
+| Role | Remote chapter navigation for Elgato Prompter texts |
+| Configuration | Buttons remapped to Elgato Prompter keyboard shortcuts |
+| Use case | Navigate between chapters while reading during a recording or live session |
+
+### Operational rationale
+
+The Norwii N95 reduces the need to touch keyboard or mouse while reading from the Elgato Prompter. It supports chapter-to-chapter navigation during recordings and live sessions, improving Prompter usability and reducing interruption of delivery flow.
+
+# 17. Source hierarchy
+
 
 1. This file is the current single source of truth.
 2. The split documents under `docs/` are navigational views of the same baseline.
