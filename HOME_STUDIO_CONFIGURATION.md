@@ -1,7 +1,7 @@
 # Home Studio Configuration — Single Source of Truth
 
 **Owner:** Salvatore Larosa  
-**Version:** 2026-08-03  
+**Version:** 2026-10-01  
 **Status:** Production baseline  
 **Purpose:** fotografia tecnica dello stato attuale del sistema Home Office / Home Studio.  
 **Rule:** i valori indicati come `Production` descrivono ciò che è attualmente configurato. Alternative, ipotesi e prove future sono riportate separatamente e non sostituiscono la baseline.
@@ -681,9 +681,9 @@ The analog audio input of the 4K X has not yet been validated. It must remain cl
 
 ### Evidence screenshots
 
-- `screenshots/source-extracts/Settaggi_Facecam_4k_di_massima_001.png`
-- `screenshots/source-extracts/Settaggi_Facecam_4k_di_massima_002.png`
-- `screenshots/source-extracts/Settaggi_Facecam_4k_di_massima_003.png`
+- `screenshots/source-extracts/Settaggi_Facecam_4K_Camera_Hub_Frame_Picture_2026-10-01.png`
+- `screenshots/source-extracts/Settaggi_Facecam_4K_Camera_Hub_Exposure_Processing_2026-10-01.png`
+- `screenshots/source-extracts/Settaggi_Facecam_4K_Device_Details_2026-10-01.png`
 
 ## 10.4 Retired webcam — Logitech StreamCam
 
@@ -727,7 +727,7 @@ The following Logi Tune values are historical only and must not be treated as cu
 
 **Orientation convention:** Left/Right are from Salvatore's seated point of view. The Right Key Light is the unit visible reflected in the glass cabinet behind him.
 
-**Evidence screenshot:** `screenshots/source-extracts/Elgato_Key_Light_Air_Control_Center_2026-10-01.png`
+**Evidence screenshot:** `screenshots/source-extracts/Settaggi_Key_Light_Air_Control_Center_2026-10-01.png`
 
 # 12. Production workflows
 
