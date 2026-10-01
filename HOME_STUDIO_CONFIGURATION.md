@@ -646,7 +646,46 @@ The analog audio input of the 4K X has not yet been validated. It must remain cl
 | K&F Concept CPL Nano-Klear polarizer, 18-layer nano coating | 49 mm | Filtro polarizzatore per gestire riflessi e resa in situazioni specifiche. | Available |
 | Lens cap | 49 mm | Protezione dell'obiettivo quando la Facecam 4K non viene usata per lunghi periodi. | Available |
 
-## 10.3 Retired webcam — Logitech StreamCam
+## 10.3 Camera Hub — Production baseline (2026-10-01)
+
+| Parameter name | Current value |
+|---|---|
+| Input | Elgato Facecam 4K |
+| Format | 1080p30 (YUY2 raw) |
+| Zoom / FOV | 174% |
+| Pan / Tilt | 0% / 0% |
+| Preset | A |
+| Contrast | 55% |
+| Saturation | 60% |
+| Sharpness | 45% |
+| Exposure | Manual |
+| Shutter Speed | 1/33 s |
+| ISO | 2851 |
+| Dynamic Range | Standard |
+| White Balance | Manual |
+| Temperature | 4900 K |
+| Tint | -3 |
+| Noise Reduction | Custom |
+| 2D Noise Reduction | 35 |
+| 3D Noise Reduction | 34 |
+| Anti-flicker | 50 Hz |
+
+### Device details
+
+| Parameter name | Current value |
+|---|---|
+| Firmware Version | 2.49.0000 (IQ: 1.10.00.26) |
+| Low-Light Mode | Off (Recommended) |
+| Status LED | Always on |
+| LED Brightness | Near maximum |
+
+### Evidence screenshots
+
+- `screenshots/source-extracts/Settaggi_Facecam_4k_di_massima_001.png`
+- `screenshots/source-extracts/Settaggi_Facecam_4k_di_massima_002.png`
+- `screenshots/source-extracts/Settaggi_Facecam_4k_di_massima_003.png`
+
+## 10.4 Retired webcam — Logitech StreamCam
 
 | Parameter name | Historical value |
 |---|---|
@@ -729,7 +768,7 @@ Use `Add Existing` when reusing the same capture device in another scene. Do not
 
 ## 13.2 Facecam 4K validation
 
-The Elgato Facecam 4K is the current Production webcam secondary source. Detailed Elgato Camera Hub parameters and A/V sync offsets are not yet documented in this baseline and should be validated after the new webcam setup is finalized.
+The Elgato Facecam 4K Camera Hub parameters are baselined as Production as of 2026-10-01. A/V sync offsets remain to be validated.
 
 ## 13.3 Historical StreamCam wake-up exposure issue
 
@@ -749,7 +788,6 @@ Do not use AirPlay, HomePod or Wi-Fi speakers to judge recorded A/V sync. Use lo
 | SlickEQ reactivation | Not adopted |
 | Wider activation | Not adopted |
 | 4K delivery from OBS | Not required in current workflow |
-| Elgato Facecam 4K detailed Camera Hub settings | To be documented / Production device but settings not yet baselined |
 | Elgato Facecam 4K sync offset matrix | To be validated |
 | Logitech StreamCam | Retired / historical only |
 
