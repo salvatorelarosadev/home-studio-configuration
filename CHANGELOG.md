@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-01
+
+- Updated Elgato Key Light Air production baseline.
+- Confirmed naming convention from Salvatore's point of view: Left = his left; Right = his right.
+- Set Key Light Air Left to 50% / 5400 K.
+- Set Key Light Air Right to 35% / 5400 K.
+
 ## 2026-07-20
 
 - Created initial Git-ready archive.
