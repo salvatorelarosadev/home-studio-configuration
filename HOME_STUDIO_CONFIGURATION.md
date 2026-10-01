@@ -725,6 +725,10 @@ The following Logi Tune values are historical only and must not be treated as cu
 | Bookshelf lamp | Brightness | 100% |
 | Bookshelf lamp | Lampshade split | 40/60 |
 
+**Orientation convention:** Left/Right are from Salvatore's seated point of view. The Right Key Light is the unit visible reflected in the glass cabinet behind him.
+
+**Evidence screenshot:** `screenshots/source-extracts/Elgato_Key_Light_Air_Control_Center_2026-10-01.png`
+
 # 12. Production workflows
 
 ## 12.1 Important recording
