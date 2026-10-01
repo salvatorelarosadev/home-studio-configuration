@@ -338,5 +338,29 @@
     "source_document": "Settaggi StreamCam di massima.docx",
     "embedded_path": "word/media/image2.png",
     "extracted_file": "screenshots/source-extracts/Settaggi_StreamCam_di_massima_002.png"
+  },
+  {
+    "source_document": "Direct screenshot — Elgato Camera Hub",
+    "capture_date": "2026-10-01",
+    "evidence_for": "Facecam 4K — Frame and Picture",
+    "extracted_file": "screenshots/source-extracts/Settaggi_Facecam_4K_Camera_Hub_Frame_Picture_2026-10-01.png"
+  },
+  {
+    "source_document": "Direct screenshot — Elgato Camera Hub",
+    "capture_date": "2026-10-01",
+    "evidence_for": "Facecam 4K — Exposure, White Balance and Processing",
+    "extracted_file": "screenshots/source-extracts/Settaggi_Facecam_4K_Camera_Hub_Exposure_Processing_2026-10-01.png"
+  },
+  {
+    "source_document": "Direct screenshot — Elgato Camera Hub",
+    "capture_date": "2026-10-01",
+    "evidence_for": "Facecam 4K — Device Details",
+    "extracted_file": "screenshots/source-extracts/Settaggi_Facecam_4K_Device_Details_2026-10-01.png"
+  },
+  {
+    "source_document": "Direct screenshot — Elgato Control Center",
+    "capture_date": "2026-10-01",
+    "evidence_for": "Key Light Air — lighting baseline",
+    "extracted_file": "screenshots/source-extracts/Settaggi_Key_Light_Air_Control_Center_2026-10-01.png"
   }
 ]
