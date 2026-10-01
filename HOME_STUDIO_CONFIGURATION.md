@@ -679,10 +679,10 @@ The following Logi Tune values are historical only and must not be treated as cu
 |---|---|---|
 | Neewer FS150B | Brightness | 36% |
 | Neewer FS150B | Colour temperature | 5600 K |
-| Elgato Key Light left | Brightness | 27% |
-| Elgato Key Light left | Colour temperature | 5200 K |
-| Elgato Key Light right | Brightness | 15% |
-| Elgato Key Light right | Colour temperature | 5400 K |
+| Elgato Key Light Air Left | Brightness | 50% |
+| Elgato Key Light Air Left | Colour temperature | 5400 K |
+| Elgato Key Light Air Right | Brightness | 35% |
+| Elgato Key Light Air Right | Colour temperature | 5400 K |
 | Bookshelf lamp | Brightness | 100% |
 | Bookshelf lamp | Lampshade split | 40/60 |
 
