@@ -6,6 +6,9 @@
 - Confirmed naming convention from Salvatore's point of view: Left = his left; Right = his right.
 - Set Key Light Air Left to 50% / 5400 K.
 - Set Key Light Air Right to 35% / 5400 K.
+- Baselined Elgato Facecam 4K Camera Hub settings and device details.
+- Replaced legacy Facecam screenshot references with the three dated 2026-10-01 screenshots.
+- Standardized Facecam and Key Light screenshot naming and registered the four current screenshots in `screenshots/MANIFEST.json`.
 
 ## 2026-07-20
 
