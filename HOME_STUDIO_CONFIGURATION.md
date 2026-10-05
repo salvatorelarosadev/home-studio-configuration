@@ -1,7 +1,7 @@
 # Home Studio Configuration — Single Source of Truth
 
 **Owner:** Salvatore Larosa  
-**Version:** 2026-10-01  
+**Version:** 2026-10-05  
 **Status:** Production baseline  
 **Purpose:** fotografia tecnica dello stato attuale del sistema Home Office / Home Studio.  
 **Rule:** i valori indicati come `Production` descrivono ciò che è attualmente configurato. Alternative, ipotesi e prove future sono riportate separatamente e non sostituiscono la baseline.
@@ -18,6 +18,7 @@
 - La tastiera principale è la Keychron K5 Ultra 8K ISO-IT, equipaggiata con switch Keychron Milk POM Red e keycap LSA double-shot PBT.
 - La Logitech Craft resta disponibile come tastiera secondaria / alternativa.
 - La Facecam 4K può usare filtri ottici da 49 mm; i filtri vanno trattati come parte della configurazione video, non come accessori generici.
+- Il filtro montato di default sulla Elgato Facecam 4K è HOYA UXII UV; i profili Camera Hub e Key Light Air dipendono dal filtro ottico utilizzato e vanno conservati separatamente.
 - Per workshop/seminari fuori studio è disponibile il kit DJI Wireless Mic 3.
 
 ## 2. Ambiente
@@ -639,6 +640,7 @@ The analog audio input of the 4K X has not yet been validated. It must remain cl
 | Connection | Direct to MacBook Pro M3 Pro |
 | Cable | Elgato USB-C cable, 5 Gbps bandwidth |
 | Optical filter thread | 49 mm |
+| Default mounted filter | HOYA UXII UV with Hoya Anti-Reflection Multi Coating (49 mm) |
 | Notes | La Facecam 4K non passa dal CalDigit; resta una sorgente video diretta al Mac, come già avveniva per la precedente StreamCam. |
 
 ## 10.2 Optical filter kit — Facecam 4K
@@ -646,13 +648,17 @@ The analog audio input of the 4K X has not yet been validated. It must remain cl
 | Filter / accessory | Size | Purpose / note | Status |
 |---|---:|---|---|
 | K&F Concept Black Diffusion 1/8 | 49 mm | Diffusione leggera per ammorbidire l'immagine in alcune condizioni di ripresa. | Available |
-| HOYA UXII UV with Hoya Anti-Reflection Multi Coating | 49 mm | Filtro UV/protezione con trattamento antiriflesso. | Available |
-| K&F Concept CPL Nano-Klear polarizer, 18-layer nano coating | 49 mm | Filtro polarizzatore per gestire riflessi e resa in situazioni specifiche. | Available |
+| HOYA UXII UV with Hoya Anti-Reflection Multi Coating | 49 mm | Filtro UV/protezione con trattamento antiriflesso. | **Default / installed** from 2026-10-05; dedicated Camera Hub + Key Light Air profile to be calibrated |
+| K&F Concept CPL Nano-Klear polarizer, 18-layer nano coating | 49 mm | Filtro polarizzatore per gestire riflessi e resa in situazioni specifiche. | Available; validated Camera Hub + Key Light Air profile preserved |
 | Lens cap | 49 mm | Protezione dell'obiettivo quando la Facecam 4K non viene usata per lunghi periodi. | Available |
 
-## 10.3 Camera Hub — Production baseline (2026-10-01)
+## 10.3 Camera Hub — filter-specific configuration profiles
 
-| Parameter name | Current value |
+### 10.3.1 Elgato Facecam 4K + Filtro K&F Concept CPL Nano-Klear — validated profile (2026-10-01)
+
+**Profile status:** configurazione validata e conservata per l'uso con il filtro K&F Concept CPL Nano-Klear. Questi valori non devono essere sovrascritti durante la calibrazione del profilo HOYA UXII UV.
+
+| Parameter name | Profile value |
 |---|---|
 | Input | Elgato Facecam 4K |
 | Format | 1080p30 (YUY2 raw) |
@@ -674,20 +680,26 @@ The analog audio input of the 4K X has not yet been validated. It must remain cl
 | 3D Noise Reduction | 34 |
 | Anti-flicker | 50 Hz |
 
-### Device details
+#### Device details captured with this profile
 
-| Parameter name | Current value |
+| Parameter name | Captured value |
 |---|---|
 | Firmware Version | 2.49.0000 (IQ: 1.10.00.26) |
 | Low-Light Mode | Off (Recommended) |
 | Status LED | Always on |
 | LED Brightness | Near maximum |
 
-### Evidence screenshots
+#### Evidence screenshots — K&F Concept CPL Nano-Klear profile
 
-- `screenshots/source-extracts/Settaggi_Facecam_4K_Camera_Hub_Frame_Picture_2026-10-01.png`
-- `screenshots/source-extracts/Settaggi_Facecam_4K_Camera_Hub_Exposure_Processing_2026-10-01.png`
-- `screenshots/source-extracts/Settaggi_Facecam_4K_Device_Details_2026-10-01.png`
+- `screenshots/source-extracts/configurazioni per uso di Elgato Facecam 4K + Filtro K&F Concept CPL Nano-Klear/Settaggi_Facecam_4K_Camera_Hub_Frame_Picture_2026-10-01.png`
+- `screenshots/source-extracts/configurazioni per uso di Elgato Facecam 4K + Filtro K&F Concept CPL Nano-Klear/Settaggi_Facecam_4K_Camera_Hub_Exposure_Processing_2026-10-01.png`
+- `screenshots/source-extracts/configurazioni per uso di Elgato Facecam 4K + Filtro K&F Concept CPL Nano-Klear/Settaggi_Facecam_4K_Device_Details_2026-10-01.png`
+
+### 10.3.2 Elgato Facecam 4K + Filtro HOYA UXII UV — default profile / calibration pending
+
+**Filter status:** HOYA UXII UV è il filtro montato di default sulla Facecam 4K dal 2026-10-05.
+
+**Configuration status:** i valori Camera Hub dedicati a questo filtro non sono ancora baselinati. Saranno documentati in questa sezione dopo la calibrazione; il profilo K&F CPL sopra resta conservato e invariato.
 
 ## 10.4 Retired webcam — Logitech StreamCam
 
@@ -718,20 +730,35 @@ The following Logi Tune values are historical only and must not be treated as cu
 
 # 11. Lighting
 
+## 11.1 General / ambient lighting
+
 | Device | Parameter | Current value |
 |---|---|---|
 | Neewer FS150B | Brightness | 36% |
 | Neewer FS150B | Colour temperature | 5600 K |
+| Bookshelf lamp | Brightness | 100% |
+| Bookshelf lamp | Lampshade split | 40/60 |
+
+## 11.2 Elgato Key Light Air — filter-specific configuration profiles
+
+### 11.2.1 Elgato Facecam 4K + Filtro K&F Concept CPL Nano-Klear — validated profile (2026-10-01)
+
+| Device | Parameter | Profile value |
+|---|---|---|
 | Elgato Key Light Air Left | Brightness | 50% |
 | Elgato Key Light Air Left | Colour temperature | 5400 K |
 | Elgato Key Light Air Right | Brightness | 35% |
 | Elgato Key Light Air Right | Colour temperature | 5400 K |
-| Bookshelf lamp | Brightness | 100% |
-| Bookshelf lamp | Lampshade split | 40/60 |
 
 **Orientation convention:** Left/Right are from Salvatore's seated point of view. The Right Key Light is the unit visible reflected in the glass cabinet behind him.
 
-**Evidence screenshot:** `screenshots/source-extracts/Settaggi_Key_Light_Air_Control_Center_2026-10-01.png`
+**Evidence screenshot:** `screenshots/source-extracts/configurazioni per uso di Elgato Facecam 4K + Filtro K&F Concept CPL Nano-Klear/Settaggi_Key_Light_Air_Control_Center_2026-10-01.png`
+
+### 11.2.2 Elgato Facecam 4K + Filtro HOYA UXII UV — default profile / calibration pending
+
+**Filter status:** HOYA UXII UV è il filtro montato di default sulla Facecam 4K.
+
+**Configuration status:** i valori dedicati delle Elgato Key Light Air non sono ancora baselinati. Saranno documentati qui dopo la calibrazione e non dovranno sovrascrivere il profilo K&F CPL sopra.
 
 # 12. Production workflows
 

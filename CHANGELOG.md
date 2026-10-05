@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-05
+
+- Reorganized Facecam 4K Camera Hub and Elgato Key Light Air settings into filter-specific configuration profiles.
+- Preserved the 2026-10-01 Camera Hub and Key Light Air baseline as the validated profile for `Elgato Facecam 4K + Filtro K&F Concept CPL Nano-Klear`.
+- Registered `HOYA UXII UV` as the default filter mounted on the Elgato Facecam 4K from 2026-10-05; its dedicated Camera Hub and Key Light Air profile is pending calibration.
+- Moved the three Camera Hub screenshots and the Key Light Air screenshot into `screenshots/source-extracts/configurazioni per uso di Elgato Facecam 4K + Filtro K&F Concept CPL Nano-Klear/`.
+- Updated `screenshots/MANIFEST.json` to reflect the new evidence paths and profile association.
+
 ## 2026-10-01
 
 - Updated Elgato Key Light Air production baseline.
