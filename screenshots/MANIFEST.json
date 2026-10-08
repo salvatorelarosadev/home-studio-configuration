@@ -366,5 +366,33 @@
     "evidence_for": "Key Light Air — lighting baseline",
     "extracted_file": "screenshots/source-extracts/configurazioni per uso di Elgato Facecam 4K + Filtro K&F Concept CPL Nano-Klear/Settaggi_Key_Light_Air_Control_Center_2026-10-01.png",
     "configuration_profile": "Elgato Facecam 4K + Filtro K&F Concept CPL Nano-Klear"
+  },
+  {
+    "source_document": "Direct screenshot — Elgato Camera Hub",
+    "capture_date": "2026-10-08",
+    "evidence_for": "Facecam 4K + HOYA UXII UV — Frame & Picture (observed format 360p60 NV12; calibrated 1080p30 YUY2, verification pending)",
+    "extracted_file": "screenshots/source-extracts/configurazioni per uso di Elgato Facecam 4K + Filtro HOYA UXII UV/Settaggi_Facecam_4K_Camera_Hub_Frame_Picture_2026-10-08.png",
+    "configuration_profile": "Elgato Facecam 4K + Filtro HOYA UXII UV"
+  },
+  {
+    "source_document": "Direct screenshot — Elgato Camera Hub",
+    "capture_date": "2026-10-08",
+    "evidence_for": "Facecam 4K + HOYA UXII UV — Exposure, White Balance and Processing",
+    "extracted_file": "screenshots/source-extracts/configurazioni per uso di Elgato Facecam 4K + Filtro HOYA UXII UV/Settaggi_Facecam_4K_Camera_Hub_Exposure_Processing_2026-10-08.png",
+    "configuration_profile": "Elgato Facecam 4K + Filtro HOYA UXII UV"
+  },
+  {
+    "source_document": "Direct screenshot — Elgato Camera Hub",
+    "capture_date": "2026-10-08",
+    "evidence_for": "Facecam 4K + HOYA UXII UV — Device Details",
+    "extracted_file": "screenshots/source-extracts/configurazioni per uso di Elgato Facecam 4K + Filtro HOYA UXII UV/Settaggi_Facecam_4K_Device_Details_2026-10-08.png",
+    "configuration_profile": "Elgato Facecam 4K + Filtro HOYA UXII UV"
+  },
+  {
+    "source_document": "Direct screenshot — Elgato Control Center",
+    "capture_date": "2026-10-08",
+    "evidence_for": "Facecam 4K + HOYA UXII UV — Key Light Air Left 30% / Right 20% and both 5400 K (numeric settings user-confirmed)",
+    "extracted_file": "screenshots/source-extracts/configurazioni per uso di Elgato Facecam 4K + Filtro HOYA UXII UV/Settaggi_Key_Light_Air_Control_Center_2026-10-08.png",
+    "configuration_profile": "Elgato Facecam 4K + Filtro HOYA UXII UV"
   }
 ]
