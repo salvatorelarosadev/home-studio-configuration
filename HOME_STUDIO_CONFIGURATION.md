@@ -648,7 +648,7 @@ The analog audio input of the 4K X has not yet been validated. It must remain cl
 | Filter / accessory | Size | Purpose / note | Status |
 |---|---:|---|---|
 | K&F Concept Black Diffusion 1/8 | 49 mm | Diffusione leggera per ammorbidire l'immagine in alcune condizioni di ripresa. | Available |
-| HOYA UXII UV with Hoya Anti-Reflection Multi Coating | 49 mm | Filtro UV/protezione con trattamento antiriflesso; sostanzialmente neutro per la luce visibile, non penalizza in modo significativo la luminosità. | **Standard / permanently mounted** since 2026-10-05; visual quality validated in Teams on 2026-10-08 (capture format discrepancy to verify) |
+| HOYA UXII UV with Hoya Anti-Reflection Multi Coating | 49 mm | Filtro UV/protezione con trattamento antiriflesso; sostanzialmente neutro per la luce visibile, non penalizza in modo significativo la luminosità. | **Standard / permanently mounted** since 2026-10-05; HOYA Camera Hub + Key Light profile validated in Teams on 2026-10-08 |
 | K&F Concept CPL Nano-Klear polarizer, 18-layer nano coating | 49 mm | Filtro polarizzatore per controllare i riflessi in situazioni specifiche; riduce la luce trasmessa e richiede una compensazione dell'esposizione e/o dell'illuminazione. | Available / alternative (not standard); validated Camera Hub + Key Light Air profile preserved |
 | Lens cap | 49 mm | Protezione dell'obiettivo quando la Facecam 4K non viene usata per lunghi periodi. | Available |
 
@@ -699,13 +699,12 @@ The analog audio input of the 4K X has not yet been validated. It must remain cl
 
 **Filter status:** HOYA UXII UV è il filtro **standard stabilmente montato** sulla Facecam 4K dal 2026-10-05, in sostituzione del CPL per l'uso ordinario.
 
-**Profile status:** qualità dell'immagine approvata durante la prova reale in Microsoft Teams dell'8 ottobre 2026. Esposizione, colore e riduzione del rumore sono consolidati. **Resta da riconciliare una discrepanza sul formato di acquisizione** tra il test a 1080p30 (YUY2 raw) e il nuovo screenshot Camera Hub che visualizza 360p60 (NV12 raw). Non dichiarare risolta questa verifica senza un controllo successivo.
+**Profile status:** configurazione HOYA UXII UV validata nella prova reale in Microsoft Teams dell'8 ottobre 2026. Esposizione, colori, riduzione del rumore e formato 1080p30 (YUY2 raw) sono documentati; il formato è stato verificato nello screenshot Frame & Picture sostituito e corretto il giorno stesso.
 
 | Parameter name | HOYA profile value / evidence |
 |---|---|
 | Input | Elgato Facecam 4K |
-| Format used for calibration | 1080p30 (YUY2 raw) |
-| Format observed in archived Frame & Picture screenshot (2026-10-08) | **360p60 (NV12 raw) — to verify** |
+| Format | 1080p30 (YUY2 raw), verified in updated Frame & Picture screenshot (2026-10-08) |
 | Zoom / FOV | 174% |
 | Pan / Tilt | 0% / 0% |
 | Contrast | 55% |
@@ -855,7 +854,7 @@ Use `Add Existing` when reusing the same capture device in another scene. Do not
 
 ## 13.2 Facecam 4K validation
 
-Il profilo CPL Camera Hub + Key Light Air è validato (2026-10-01) e resta preservato. HOYA UXII UV è il filtro standard installato dal 2026-10-05: la resa del suo profilo Camera Hub + Key Light Air è stata approvata in Microsoft Teams (2026-10-08). Resta aperta la verifica del formato di acquisizione (1080p30 YUY2 durante il test contro 360p60 NV12 nello screenshot archiviato). Gli offset di sync A/V della Facecam restano da validare.
+Il profilo CPL Camera Hub + Key Light Air è validato (2026-10-01) e resta preservato. HOYA UXII UV è il filtro standard installato dal 2026-10-05: il profilo Camera Hub + Key Light Air è validato in Microsoft Teams (2026-10-08). Il formato 1080p30 (YUY2 raw) è confermato nello screenshot Camera Hub aggiornato; la discrepanza temporanea era dovuta allo screenshot precedente, ora sostituito. Gli offset di sync A/V della Facecam restano da validare.
 
 ## 13.3 Historical StreamCam wake-up exposure issue
 
