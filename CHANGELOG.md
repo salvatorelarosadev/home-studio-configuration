@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-08
+
+- Explicitly confirmed **HOYA UXII UV (49 mm)** as the standard, permanently mounted filter on the Elgato Facecam 4K since 2026-10-05 (not CPL).
+- Recorded the rationale: HOYA UV is essentially neutral for visible-light transmission; the alternative CPL reduces transmitted light and costs exposure stops, requiring compensation.
+- Preserved the validated CPL Camera Hub + Key Light Air profile (2026-10-01); the dedicated HOYA profile remains pending calibration.
+- Clarified the Facecam validation note to distinguish the CPL baseline from the still-unvalidated HOYA baseline.
+
 ## 2026-10-05
 
 - Reorganized Facecam 4K Camera Hub and Elgato Key Light Air settings into filter-specific configuration profiles.
