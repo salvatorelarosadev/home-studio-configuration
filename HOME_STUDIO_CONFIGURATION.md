@@ -19,6 +19,7 @@
 - La Logitech Craft resta disponibile come tastiera secondaria / alternativa.
 - La Facecam 4K può usare filtri ottici da 49 mm; i filtri vanno trattati come parte della configurazione video, non come accessori generici.
 - Il filtro ottico **standard, stabilmente installato** sulla Elgato Facecam 4K dal 2026-10-05 è **HOYA UXII UV 49 mm**, non il K&F CPL. HOYA è stato scelto per la trasmissione sostanzialmente neutra della luce visibile e perché non introduce la significativa perdita di luminosità (stop di esposizione) propria di un polarizzatore CPL. I profili Camera Hub e Key Light Air dipendono dal filtro ottico utilizzato e vanno conservati separatamente.
+- La Bookshelf Lamp è una **luce ambientale indipendente dai profili camera**, attivabile a scelta. Il preset trasversale raccomandato è **Accent Cyan** (Color, 20% luminosità, 25% saturazione); la camera è stata calibrata anche con questa lampada spenta.
 - Per workshop/seminari fuori studio è disponibile il kit DJI Wireless Mic 3.
 
 ## 2. Ambiente
@@ -774,8 +775,36 @@ The following Logi Tune values are historical only and must not be treated as cu
 |---|---|---|
 | Neewer FS150B | Brightness | 36% |
 | Neewer FS150B | Colour temperature | 5600 K |
-| Bookshelf lamp | Brightness | 100% |
-| Bookshelf lamp | Lampshade split | 40/60 |
+| Bookshelf lamp | Control | Smart Wi-Fi, via iOS app |
+| Bookshelf lamp | Role | Luce ambientale di accento, opzionale e trasversale ai profili camera |
+| Bookshelf lamp | Recommended preset | Accent Cyan (section 11.1.2) |
+| Bookshelf lamp | Power state | A scelta: On con Accent Cyan / Off senza modificare la baseline camera |
+
+### 11.1.1 Bookshelf Lamp — indipendenza dai profili camera
+
+La Bookshelf Lamp è una luce **ambientale autonoma**, esterna e trasversale alle configurazioni della Facecam e delle Key Light Air. Non è parte dei profili ottici HOYA UXII UV o K&F CPL, né vincola le relative impostazioni di esposizione, bilanciamento del bianco o intensità delle Key Light.
+
+L'uso della Bookshelf Lamp è **facoltativo**: si può tenere accesa con il preset Accent Cyan oppure spenta, secondo le preferenze o il contesto. La calibrazione e la validazione del profilo HOYA dell'8 ottobre 2026 sono state effettuate **con la Bookshelf Lamp spenta**; il preset ambientale è stato valutato in seguito tramite screenshot Microsoft Teams.
+
+**Nota storica:** nella precedente tabella 11.1 erano riportati `Brightness 100%` e `Lampshade split 40/60`. Il 100% non è il valore operativo raccomandato della modalità Color: era stato provato come impostazione intensa, poi scartata. Il riferimento `40/60` è un'annotazione precedente, non verificata come parametro del preset Color attuale, e non va confuso con luminosità o saturazione.
+
+### 11.1.2 Bookshelf Lamp — Accent Cyan (recommended, 2026-10-08)
+
+**Status:** preset ambientale consigliato per l'uso quotidiano, **opzionale** e indipendente dai profili della camera; confronto visivo eseguito su Microsoft Teams.
+
+| Parameter name | Profile value |
+|---|---|
+| Control mode | Color |
+| Hue / colour family | Cyan / azzurro-ciano, posizione del selettore documentata nello screenshot |
+| Brightness | **20%** |
+| Saturation / colour intensity | **25%** |
+| Power state | On quando si desidera l'accento, Off a discrezione |
+| Role | Ambient accent / background only; non è un'illuminazione principale del volto |
+| Applicability | Trasversale a HOYA/CPL e agli altri workflow video |
+
+**Razionali di scelta:** rispetto ai test con luminosità/saturazione 100%/100% e 25%/31%, la combinazione **20%/25%** offre un accento ciano **sobrio**, un **professional look** più equilibrato e una presenza cromatica contenuta, coerente con l'utilizzo in **call frequenti**. È abbastanza discreta da poter essere mantenuta accesa abitualmente, ma non è una dipendenza del sistema: **può essere spenta in qualsiasi momento** senza alterare la configurazione Camera Hub / Key Light Air già validata. L'effetto sull'immagine dipende anche dalle condizioni luminose dell'ambiente.
+
+**Evidence screenshot (app iOS, modalità Color):** `screenshots/source-extracts/configurazioni trasversali illuminazione/Settaggi_Bookshelf_Lamp_Color_Cyan_2026-10-08.jpeg`
 
 ## 11.2 Elgato Key Light Air — filter-specific configuration profiles
 
@@ -805,7 +834,7 @@ The following Logi Tune values are historical only and must not be treated as cu
 
 **Orientation convention:** Left/Right sono definiti dal punto di vista di Salvatore seduto alla scrivania (stessa convenzione del profilo CPL). Valori numerici comunicati da Salvatore; lo screenshot Control Center mostra le posizioni degli slider ma non la percentuale in numeri.
 
-**Calibration environment:** bookshelf lamp **Off** nella prova; le altre luci non sono state modificate nel corso della calibrazione HOYA. Il valore 100% riportato nella sezione 11.1 descrive la regolazione della bookshelf lamp quando accesa, non il suo stato durante il test.
+**Calibration environment:** bookshelf lamp **Off** nella prova; le altre luci non sono state modificate nel corso della calibrazione HOYA. Il preset ambientale Accent Cyan è descritto separatamente in 11.1.2 e resta opzionale, senza alterare la baseline Camera Hub / Key Light Air.
 
 **Evidence screenshot:** `screenshots/source-extracts/configurazioni per uso di Elgato Facecam 4K + Filtro HOYA UXII UV/Settaggi_Key_Light_Air_Control_Center_2026-10-08.png`
 

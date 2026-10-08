@@ -394,5 +394,12 @@
     "evidence_for": "Facecam 4K + HOYA UXII UV — Key Light Air Left 30% / Right 20% and both 5400 K (numeric settings user-confirmed)",
     "extracted_file": "screenshots/source-extracts/configurazioni per uso di Elgato Facecam 4K + Filtro HOYA UXII UV/Settaggi_Key_Light_Air_Control_Center_2026-10-08.png",
     "configuration_profile": "Elgato Facecam 4K + Filtro HOYA UXII UV"
+  },
+  {
+    "source_document": "Direct screenshot — Bookshelf Lamp iOS smart-control app",
+    "capture_date": "2026-10-08",
+    "evidence_for": "Bookshelf Lamp — independent Accent Cyan ambient preset; Color mode, brightness 20%, saturation 25%; hue selected in cyan area (no numeric hue value provided)",
+    "extracted_file": "screenshots/source-extracts/configurazioni trasversali illuminazione/Settaggi_Bookshelf_Lamp_Color_Cyan_2026-10-08.jpeg",
+    "configuration_profile": "Bookshelf Lamp — Accent Cyan (ambient / independent of camera and filter profiles)"
   }
 ]
