@@ -1,7 +1,7 @@
 # Home Studio Configuration — Single Source of Truth
 
 **Owner:** Salvatore Larosa  
-**Version:** 2026-10-05  
+**Version:** 2026-10-08  
 **Status:** Production baseline  
 **Purpose:** fotografia tecnica dello stato attuale del sistema Home Office / Home Studio.  
 **Rule:** i valori indicati come `Production` descrivono ciò che è attualmente configurato. Alternative, ipotesi e prove future sono riportate separatamente e non sostituiscono la baseline.
@@ -18,7 +18,7 @@
 - La tastiera principale è la Keychron K5 Ultra 8K ISO-IT, equipaggiata con switch Keychron Milk POM Red e keycap LSA double-shot PBT.
 - La Logitech Craft resta disponibile come tastiera secondaria / alternativa.
 - La Facecam 4K può usare filtri ottici da 49 mm; i filtri vanno trattati come parte della configurazione video, non come accessori generici.
-- Il filtro montato di default sulla Elgato Facecam 4K è HOYA UXII UV; i profili Camera Hub e Key Light Air dipendono dal filtro ottico utilizzato e vanno conservati separatamente.
+- Il filtro ottico **standard, stabilmente installato** sulla Elgato Facecam 4K dal 2026-10-05 è **HOYA UXII UV 49 mm**, non il K&F CPL. HOYA è stato scelto per la trasmissione sostanzialmente neutra della luce visibile e perché non introduce la significativa perdita di luminosità (stop di esposizione) propria di un polarizzatore CPL. I profili Camera Hub e Key Light Air dipendono dal filtro ottico utilizzato e vanno conservati separatamente.
 - Per workshop/seminari fuori studio è disponibile il kit DJI Wireless Mic 3.
 
 ## 2. Ambiente
@@ -640,7 +640,7 @@ The analog audio input of the 4K X has not yet been validated. It must remain cl
 | Connection | Direct to MacBook Pro M3 Pro |
 | Cable | Elgato USB-C cable, 5 Gbps bandwidth |
 | Optical filter thread | 49 mm |
-| Default mounted filter | HOYA UXII UV with Hoya Anti-Reflection Multi Coating (49 mm) |
+| Standard / permanently mounted filter | HOYA UXII UV with Hoya Anti-Reflection Multi Coating (49 mm), since 2026-10-05 |
 | Notes | La Facecam 4K non passa dal CalDigit; resta una sorgente video diretta al Mac, come già avveniva per la precedente StreamCam. |
 
 ## 10.2 Optical filter kit — Facecam 4K
@@ -648,8 +648,8 @@ The analog audio input of the 4K X has not yet been validated. It must remain cl
 | Filter / accessory | Size | Purpose / note | Status |
 |---|---:|---|---|
 | K&F Concept Black Diffusion 1/8 | 49 mm | Diffusione leggera per ammorbidire l'immagine in alcune condizioni di ripresa. | Available |
-| HOYA UXII UV with Hoya Anti-Reflection Multi Coating | 49 mm | Filtro UV/protezione con trattamento antiriflesso. | **Default / installed** from 2026-10-05; dedicated Camera Hub + Key Light Air profile to be calibrated |
-| K&F Concept CPL Nano-Klear polarizer, 18-layer nano coating | 49 mm | Filtro polarizzatore per gestire riflessi e resa in situazioni specifiche. | Available; validated Camera Hub + Key Light Air profile preserved |
+| HOYA UXII UV with Hoya Anti-Reflection Multi Coating | 49 mm | Filtro UV/protezione con trattamento antiriflesso; sostanzialmente neutro per la luce visibile, non penalizza in modo significativo la luminosità. | **Standard / permanently mounted** since 2026-10-05; dedicated Camera Hub + Key Light Air profile to be calibrated |
+| K&F Concept CPL Nano-Klear polarizer, 18-layer nano coating | 49 mm | Filtro polarizzatore per controllare i riflessi in situazioni specifiche; riduce la luce trasmessa e richiede una compensazione dell'esposizione e/o dell'illuminazione. | Available / alternative (not standard); validated Camera Hub + Key Light Air profile preserved |
 | Lens cap | 49 mm | Protezione dell'obiettivo quando la Facecam 4K non viene usata per lunghi periodi. | Available |
 
 ## 10.3 Camera Hub — filter-specific configuration profiles
@@ -697,7 +697,7 @@ The analog audio input of the 4K X has not yet been validated. It must remain cl
 
 ### 10.3.2 Elgato Facecam 4K + Filtro HOYA UXII UV — default profile / calibration pending
 
-**Filter status:** HOYA UXII UV è il filtro montato di default sulla Facecam 4K dal 2026-10-05.
+**Filter status:** HOYA UXII UV è il filtro **standard stabilmente montato** sulla Facecam 4K dal 2026-10-05, in sostituzione del CPL come filtro per l'uso ordinario. Il profilo HOYA resta da calibrare, indipendentemente dal fatto che il filtro sia già quello predefinito.
 
 **Configuration status:** i valori Camera Hub dedicati a questo filtro non sono ancora baselinati. Saranno documentati in questa sezione dopo la calibrazione; il profilo K&F CPL sopra resta conservato e invariato.
 
@@ -756,7 +756,7 @@ The following Logi Tune values are historical only and must not be treated as cu
 
 ### 11.2.2 Elgato Facecam 4K + Filtro HOYA UXII UV — default profile / calibration pending
 
-**Filter status:** HOYA UXII UV è il filtro montato di default sulla Facecam 4K.
+**Filter status:** HOYA UXII UV è il filtro standard stabilmente installato sulla Facecam 4K dal 2026-10-05; il profilo di illuminazione dedicato non è ancora validato.
 
 **Configuration status:** i valori dedicati delle Elgato Key Light Air non sono ancora baselinati. Saranno documentati qui dopo la calibrazione e non dovranno sovrascrivere il profilo K&F CPL sopra.
 
@@ -803,7 +803,7 @@ Use `Add Existing` when reusing the same capture device in another scene. Do not
 
 ## 13.2 Facecam 4K validation
 
-The Elgato Facecam 4K Camera Hub parameters are baselined as Production as of 2026-10-01. A/V sync offsets remain to be validated.
+Il profilo Camera Hub e Key Light Air con filtro K&F CPL è validato (2026-10-01) e va preservato; il filtro standard installato dal 2026-10-05 è invece HOYA UXII UV, il cui profilo Camera Hub e luci è ancora da calibrare. Gli offset di sync A/V della Facecam restano da validare.
 
 ## 13.3 Historical StreamCam wake-up exposure issue
 
