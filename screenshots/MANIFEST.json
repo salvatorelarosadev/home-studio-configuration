@@ -370,7 +370,7 @@
   {
     "source_document": "Direct screenshot — Elgato Camera Hub",
     "capture_date": "2026-10-08",
-    "evidence_for": "Facecam 4K + HOYA UXII UV — Frame & Picture (observed format 360p60 NV12; calibrated 1080p30 YUY2, verification pending)",
+    "evidence_for": "Facecam 4K + HOYA UXII UV — Frame & Picture (1080p30 YUY2 raw confirmed in corrected screenshot dated 2026-10-08)",
     "extracted_file": "screenshots/source-extracts/configurazioni per uso di Elgato Facecam 4K + Filtro HOYA UXII UV/Settaggi_Facecam_4K_Camera_Hub_Frame_Picture_2026-10-08.png",
     "configuration_profile": "Elgato Facecam 4K + Filtro HOYA UXII UV"
   },
