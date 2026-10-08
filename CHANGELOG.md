@@ -2,6 +2,12 @@
 
 ## 2026-10-08
 
+- Calibrated the HOYA UXII UV Facecam 4K profile and approved its visual quality in a real Microsoft Teams call (2026-10-08).
+- HOYA Camera Hub exposure/color/processing: 1/33 s, ISO 2483, 4900 K / Tint -3, Contrast 55%, Saturation 60%, Sharpness 45%, Noise Reduction Custom 2D 40 / 3D 34; Zoom/FOV 174%.
+- HOYA Key Light Air profile: Left 30%, Right 20%, both 5400 K; bookshelf lamp off during testing.
+- Added four HOYA screenshot entries to `screenshots/MANIFEST.json` and linked evidence in sections 10.3.2 and 11.2.2.
+- **Follow-up:** HOYA Frame & Picture screenshot records 360p60 (NV12 raw) rather than the 1080p30 (YUY2 raw) used in calibration. Verify the actual production capture format before declaring full technical closure. CPL values and screenshot archives unchanged.
+
 - Explicitly confirmed **HOYA UXII UV (49 mm)** as the standard, permanently mounted filter on the Elgato Facecam 4K since 2026-10-05 (not CPL).
 - Recorded the rationale: HOYA UV is essentially neutral for visible-light transmission; the alternative CPL reduces transmitted light and costs exposure stops, requiring compensation.
 - Preserved the validated CPL Camera Hub + Key Light Air profile (2026-10-01); the dedicated HOYA profile remains pending calibration.
